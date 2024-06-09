@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "805915376615",
+    "firebase_url": "https://hoan-1305-default-rtdb.firebaseio.com",
+    "project_id": "hoan-1305",
+    "storage_bucket": "hoan-1305.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805915376615:android:1cbfb9c45d70970852db42",
+        "android_client_info": {
+          "package_name": "com.av.avmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805915376615-9j7kesh4dar2g5icl8m9t6p2o9g44if8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT55cZDkOJsi2uQJMypY8dyk8ABniOLUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805915376615-9j7kesh4dar2g5icl8m9t6p2o9g44if8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

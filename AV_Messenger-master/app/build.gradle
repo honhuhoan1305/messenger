@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.av.avmessenger'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.av.avmessenger"
+        minSdk 16
+        multiDexEnabled true
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.2.3') // Firebase BOM for consistent versions
+    implementation 'com.google.firebase:firebase-auth'         // Firebase Authentication
+    implementation 'com.google.firebase:firebase-database'     // Firebase Realtime Database
+    implementation 'com.google.firebase:firebase-storage'      // Firebase Storage
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'     // UI components and compatibility
+    implementation 'com.google.android.material:material:1.8.0' // Material Design components
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // Constraint Layout for UI design
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'          // Scalable size units for different screens
+    implementation 'de.hdodenhof:circleimageview:3.1.0'      // Circular image views
+    implementation 'com.squareup.picasso:picasso:2.71828'    // Image loading and caching library
+
+    implementation 'androidx.multidex:multidex:2.0.1'          // Support for apps exceeding the 64k method limit
+}
