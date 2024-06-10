@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -50,6 +51,8 @@ public class messagesAdpter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         msgModelclass messages = messagesAdpterArrayList.get(position);
+        final int messagePosition = position; // Thêm final ở đây
+
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
@@ -58,7 +61,21 @@ public class messagesAdpter extends RecyclerView.Adapter {
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
+                                // Lấy ID người gửi của tin nhắn
+                                String senderId = messages.getSenderid();
 
+                                // Kiểm tra xem người gửi có phải là người dùng hiện tạ i không
+                                if (FirebaseAuth.getInstance().getCurrentUser().getUid().equals(senderId)) {
+                                    // Xóa tin nhắn khỏi ArrayList
+                                    messagesAdpterArrayList.remove(messagePosition);
+
+                                    // Thông báo cho Adapter biết dữ liệu đã thay đổi
+                                    notifyItemRemoved(messagePosition);
+                                } else {
+                                    // Xử lý trường hợp người dùng cố xóa tin nhắn của người khác
+                                    // Ví dụ: Hiển thị thông báo
+                                    Toast.makeText(context, "You can only delete your own messages.", Toast.LENGTH_SHORT).show();
+                                }
                             }
                         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
                             @Override

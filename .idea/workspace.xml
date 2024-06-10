@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9439a27e-ae42-44f4-97da-167689323aee" name="Changes" comment="" />
+    <list default="true" id="9439a27e-ae42-44f4-97da-167689323aee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AV_Messenger-master/app/src/main/res/xml/file_paths.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV_Messenger-master/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AV_Messenger-master/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV_Messenger-master/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AV_Messenger-master/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV_Messenger-master/app/src/main/java/com/av/avmessenger/messagesAdpter.java" beforeDir="false" afterPath="$PROJECT_DIR$/AV_Messenger-master/app/src/main/java/com/av/avmessenger/messagesAdpter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV_Messenger-master/app/src/main/java/com/av/avmessenger/setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/AV_Messenger-master/app/src/main/java/com/av/avmessenger/setting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV_Messenger-master/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AV_Messenger-master/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV_Messenger-master/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AV_Messenger-master/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV_Messenger-master/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AV_Messenger-master/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +24,24 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2hdYcQtFD8WR3izLFn0eh1TTyXw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,6 +56,7 @@
     "android.gradle.sync.needed": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "H:/AV_Messenger-master/AV_Messenger-master"
   }
